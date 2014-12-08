@@ -1,7 +1,6 @@
 # CLI Table API
-A wrapper around `cli-table` with a different API.
-
 A thin wrapper around the `cli-table` providing an alternative API.
+
 For details on the wrapped library see: https://github.com/Automattic/cli-table
 
 
