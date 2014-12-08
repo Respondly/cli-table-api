@@ -16,11 +16,8 @@ module.exports = (config = {}) ->
 
   result =
     push: (array) -> table.push(array)
-    add: (items...) ->
-
-      console.log 'item.map', item.map
-
-      # @push(items.map (item) -> item ? '')
-
+    add: (items...) -> @push(items.map (item) -> item ? '')
     toString: -> table.toString()
     log: -> console.log @toString()
+
+

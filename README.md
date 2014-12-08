@@ -1,12 +1,37 @@
-# cli-table API
-A wrapper around [cli-table] with a different API.
-For details see: https://github.com/Automattic/cli-table
+# CLI Table API
+A wrapper around `cli-table` with a different API.
+
+A thin wrapper around the `cli-table` providing an alternative API.
+For details on the wrapped library see: https://github.com/Automattic/cli-table
+
+
+## Usage
+
+    Table = require('cli-table-api')
+
+    # Creates a bare table.
+    myTable = Table()
+
+    table.add 'one', 'two', 'three'
+    table.push ['four', 'five', 'six']
+
+    # Output options.
+    table.toString()  # Converts to string.
+    table.log()       # Logs to console.
+
+
+
+## Credits
+The authors of the CLI Table:
+
+- Guillermo Rauch ([Guille](http://github.com/guille))
+
 
 
 
 ## License (MIT)
 
-Copyright © 2015, **Phil Cockfield**
+Copyright © 2015, **Respondly**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
