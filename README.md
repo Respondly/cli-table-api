@@ -10,6 +10,7 @@ For details on the wrapped library see: https://github.com/Automattic/cli-table
 
     # Creates a bare table.
     myTable = Table()
+    myTable = Table(colWidths:[15, 8, 10] )
 
     table.add 'one', 'two', 'three'
     table.push ['four', 'five', 'six']
